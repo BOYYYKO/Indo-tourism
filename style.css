@@ -101,12 +101,17 @@ body {
     width: 280px;
     height: 60px;
     align-self: center;
+    text-decoration: none;
     line-height: 60px;
     border-radius: 5px;
     color: #ffffff;
     font-weight: 800;
     background-image: linear-gradient(0deg, #35af23 0%, #6dd258 100%);
     box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main-content>.button:hover {
+    transform: scale(1.05);
 }
 
 .main-content>.block {
@@ -140,10 +145,19 @@ body {
     color: #929292;
 }
 
-.places>.item>p {
+.places>.item> a >p {
     margin-top: 3px;
 }
 
+.places>.item>a{
+    text-decoration: none;
+    color:#929292;
+}
+
+.places>.item>a:hover{
+    color:#1f85e7;
+    transform: scale(1.1);
+}
 .about-us {
     background-color: #ececec;
     color: #7e7c7c;
@@ -172,6 +186,15 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 20px;
+}
+
+.category>.item > a{
+    text-decoration: none;
+    color: #7e7c7c;
+}
+
+.category>.item > a:hover{
+transform: scale(1.1);
 }
 
 .image-container {
@@ -222,5 +245,9 @@ body {
     }
     .menu {
         display: none;
+    }
+
+    .flex-between {
+        justify-content: center;
     }
 }
