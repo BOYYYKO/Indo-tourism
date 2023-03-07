@@ -9,6 +9,7 @@ body {
     font-family: 'Segoe WP';
     font-weight: normal;
     margin: 0;
+    min-width: 620px;
 }
 
 .container {
@@ -144,7 +145,6 @@ body {
 }
 
 .about-us {
-    height: 580px;
     background-color: #ececec;
     color: #7e7c7c;
     font-size: 26px;
@@ -163,6 +163,7 @@ body {
     margin-top: 50px;
     display: flex;
     justify-content: space-around;
+    padding-bottom: 80px;
 }
 
 .category>.item {
@@ -205,5 +206,21 @@ body {
     }
     .about-us-content>p {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width:840px){
+    .main-content>h1 {
+        font-size: 30px;
+    }
+    .about-us-content>p {
+        font-size: 15px;
+    }
+    .category{
+        flex-wrap: wrap;
+    justify-content: space-evenly;
+    }
+    .menu {
+        display: none;
     }
 }
